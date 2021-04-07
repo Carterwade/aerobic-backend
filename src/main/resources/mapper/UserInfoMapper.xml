@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nju.book.mapper.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.nju.book.model.UserInfo">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="record_id" jdbcType="VARCHAR" property="recordId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="root" jdbcType="INTEGER" property="root" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="high" jdbcType="DECIMAL" property="high" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="profile" jdbcType="VARCHAR" property="profile" />
+    <result column="birth" jdbcType="DATE" property="birth" />
+    <result column="sports_like" jdbcType="VARCHAR" property="sportsLike" />
+    <result column="money" jdbcType="DECIMAL" property="money" />
+    <result column="due_tume" jdbcType="DATE" property="dueTume" />
+    <result column="add_time" jdbcType="DATE" property="addTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user_info
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.nju.book.model.UserInfo">
+    insert into user_info (user_id, user_name, nick_name, 
+      record_id, address, password, 
+      location, root, sex, 
+      high, weight, profile, 
+      birth, sports_like, money, 
+      due_tume, add_time)
+    values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{nickName,jdbcType=VARCHAR}, 
+      #{recordId,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{location,jdbcType=VARCHAR}, #{root,jdbcType=INTEGER}, #{sex,jdbcType=VARCHAR}, 
+      #{high,jdbcType=DECIMAL}, #{weight,jdbcType=DECIMAL}, #{profile,jdbcType=VARCHAR}, 
+      #{birth,jdbcType=DATE}, #{sportsLike,jdbcType=VARCHAR}, #{money,jdbcType=DECIMAL}, 
+      #{dueTume,jdbcType=DATE}, #{addTime,jdbcType=DATE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.nju.book.model.UserInfo">
+    update user_info
+    set user_name = #{userName,jdbcType=VARCHAR},
+      nick_name = #{nickName,jdbcType=VARCHAR},
+      record_id = #{recordId,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      location = #{location,jdbcType=VARCHAR},
+      root = #{root,jdbcType=INTEGER},
+      sex = #{sex,jdbcType=VARCHAR},
+      high = #{high,jdbcType=DECIMAL},
+      weight = #{weight,jdbcType=DECIMAL},
+      profile = #{profile,jdbcType=VARCHAR},
+      birth = #{birth,jdbcType=DATE},
+      sports_like = #{sportsLike,jdbcType=VARCHAR},
+      money = #{money,jdbcType=DECIMAL},
+      due_tume = #{dueTume,jdbcType=DATE},
+      add_time = #{addTime,jdbcType=DATE}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select user_id, user_name, nick_name, record_id, address, password, location, root, 
+    sex, high, weight, profile, birth, sports_like, money, due_tume, add_time
+    from user_info
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select user_id, user_name, nick_name, record_id, address, password, location, root, 
+    sex, high, weight, profile, birth, sports_like, money, due_tume, add_time
+    from user_info
+  </select>
+
+  <select id="selectByUsername" parameterType="String" resultMap="BaseResultMap">
+
+  </select>
+</mapper>
