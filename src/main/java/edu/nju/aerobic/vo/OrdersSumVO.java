@@ -1,4 +1,4 @@
-package com.nju.book.vo;
+package edu.nju.aerobic.vo;
 
 public class OrdersSumVO {
 

@@ -1,4 +1,4 @@
-package com.nju.book.vo;
+package edu.nju.aerobic.vo;
 
 import java.util.List;
 

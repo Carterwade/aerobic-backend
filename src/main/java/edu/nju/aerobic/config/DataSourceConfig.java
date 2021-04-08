@@ -1,4 +1,4 @@
-package com.nju.book.config;
+package edu.nju.aerobic.config;
 
 import com.github.pagehelper.PageInterceptor;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -29,9 +29,9 @@ import java.util.Properties;
 public class DataSourceConfig {
 
     // 精确到 cluster 目录，以便跟其他数据源隔离
-    static final String PACKAGE = "com.nju.book.mapper";
+    static final String PACKAGE = "edu.nju.aerobic.mapper";
     static final String MAPPER_LOCATION = "classpath:mapper/*.xml";
-    static final String ALIAS = "com.nju.book.model";
+    static final String ALIAS = "edu.nju.aerobic.model";
 
     @Value("${spring.datasource.url}")
     private String url;

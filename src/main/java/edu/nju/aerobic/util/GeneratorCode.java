@@ -1,4 +1,4 @@
-package com.nju.book.util;
+package edu.nju.aerobic.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

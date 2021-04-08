@@ -1,10 +1,10 @@
-package com.nju.book;
+package edu.nju.aerobic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BookApplicationTests {
+class AerobicApplicationTests {
 
 	@Test
 	void contextLoads() {

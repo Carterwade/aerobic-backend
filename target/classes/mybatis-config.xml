@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <settings>
         <!-- 是否可以使用列的别名 (取决于驱动的兼容性) default:true -->
         <setting name="useColumnLabel" value="true"/>

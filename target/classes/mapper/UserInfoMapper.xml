@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.nju.book.mapper.UserInfoMapper">
-  <resultMap id="BaseResultMap" type="com.nju.book.model.UserInfo">
+<mapper namespace="edu.nju.aerobic.mapper.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="edu.nju.aerobic.model.UserInfo">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
@@ -24,7 +24,7 @@
     delete from user_info
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.nju.book.model.UserInfo">
+  <insert id="insert" parameterType="edu.nju.aerobic.model.UserInfo">
     insert into user_info (user_id, user_name, nick_name, 
       record_id, address, password, 
       location, root, sex, 
@@ -38,7 +38,7 @@
       #{birth,jdbcType=DATE}, #{sportsLike,jdbcType=VARCHAR}, #{money,jdbcType=DECIMAL}, 
       #{dueTume,jdbcType=DATE}, #{addTime,jdbcType=DATE})
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.nju.book.model.UserInfo">
+  <update id="updateByPrimaryKey" parameterType="edu.nju.aerobic.model.UserInfo">
     update user_info
     set user_name = #{userName,jdbcType=VARCHAR},
       nick_name = #{nickName,jdbcType=VARCHAR},

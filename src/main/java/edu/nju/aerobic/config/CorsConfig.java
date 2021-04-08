@@ -1,4 +1,4 @@
-package com.nju.book.config;
+package edu.nju.aerobic.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

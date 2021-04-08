@@ -1,4 +1,4 @@
-package com.nju.book.model;
+package edu.nju.aerobic.model;
 
 import java.util.Date;
 

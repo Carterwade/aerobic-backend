@@ -1,8 +1,8 @@
-package com.nju.book.controller;
+package edu.nju.aerobic.controller;
 
-import com.nju.book.model.UserInfo;
-import com.nju.book.service.UserInfoService;
-import com.nju.book.vo.ResultVO;
+import edu.nju.aerobic.model.UserInfo;
+import edu.nju.aerobic.service.UserInfoService;
+import edu.nju.aerobic.vo.ResultVO;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

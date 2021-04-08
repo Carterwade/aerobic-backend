@@ -1,9 +1,9 @@
-package com.nju.book.service.impl;
+package edu.nju.aerobic.service.impl;
 
-import com.nju.book.mapper.UserInfoMapper;
-import com.nju.book.model.UserInfo;
-import com.nju.book.service.UserInfoService;
-import com.nju.book.vo.ResultVO;
+import edu.nju.aerobic.mapper.UserInfoMapper;
+import edu.nju.aerobic.model.UserInfo;
+import edu.nju.aerobic.service.UserInfoService;
+import edu.nju.aerobic.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

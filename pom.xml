@@ -8,14 +8,17 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.nju</groupId>
-	<artifactId>book</artifactId>
+
+	<groupId>edu.nju</groupId>
+	<artifactId>aerobic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>book</name>
-	<description>Demo project for Spring Boot</description>
+	<name>aerobic</name>
+	<description>Design and implementation of aerobic exercise bar based on smart recommendation</description>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

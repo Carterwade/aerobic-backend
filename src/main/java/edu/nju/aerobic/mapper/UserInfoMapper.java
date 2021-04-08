@@ -1,6 +1,7 @@
-package com.nju.book.mapper;
+package edu.nju.aerobic.mapper;
 
-import com.nju.book.model.UserInfo;
+import edu.nju.aerobic.model.UserInfo;
+
 import java.util.List;
 
 public interface UserInfoMapper {
